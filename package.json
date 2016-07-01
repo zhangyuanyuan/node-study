@@ -1,0 +1,25 @@
+{
+  "name": "node-study",
+  "version": "1.0.0",
+  "description": "自己的一个node学习库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore"
+  },
+  "pre-commit": ["lint"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangyuanyuan/node-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangyuanyuan/node-study/issues"
+  },
+  "homepage": "https://github.com/zhangyuanyuan/node-study#readme",
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "pre-commit": "^1.1.3"
+  }
+}
