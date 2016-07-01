@@ -4,11 +4,14 @@
   "description": "自己的一个node学习库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-register --require babel-polyfill",
     "lint": "eslint ./ --cache --ignore-pattern .gitignore",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
-  "pre-commit": ["precommit-msg", "lint"],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhangyuanyuan/node-study.git"
@@ -21,6 +24,18 @@
   "homepage": "https://github.com/zhangyuanyuan/node-study#readme",
   "devDependencies": {
     "eslint": "^2.13.1",
+    "mocha": "^2.5.3",
     "pre-commit": "^1.1.3"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
